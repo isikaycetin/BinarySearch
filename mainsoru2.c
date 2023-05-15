@@ -11,11 +11,10 @@
 		return 1;
 			
 	else if(sol >= sag)
-        return 0;
+                return 0;
 	
 	else if(aranan>dizi[orta])
 		return BinarySearch(dizi,aranan,orta+1,sag);
-	
 	
 	else
 		return BinarySearch(dizi,aranan,sol,orta-1);
