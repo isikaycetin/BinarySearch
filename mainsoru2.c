@@ -13,9 +13,9 @@
 	else if(sol >= sag)
         return 0;
 	
-	else if(aranan>dizi[orta]){
+	else if(aranan>dizi[orta])
 		return BinarySearch(dizi,aranan,orta+1,sag);
-	}
+	
 	
 	else
 		return BinarySearch(dizi,aranan,sol,orta-1);
@@ -23,12 +23,12 @@
 	return 0;
 }
 
-  // Dizide bubble sort algoritmasını kullanilarak siraladik.
+  // Dizide bubble sort algoritmasÄ±nÄ± kullanilarak siraladik.
  void BubbleSort(int dizi[],int size){
 	
 	int i,j,sirala;
 	
-	// Diziyi küçükten büyüge siraladik.
+	// Diziyi kÃ¼Ã§Ã¼kten bÃ¼yÃ¼ge siraladik.
 	for(i=0;i<size;i++){
 		for(j=0;j<size-(i+1);j++){
 			
@@ -47,12 +47,12 @@
 	int sonuc,boyut,ArananSayi;
 	int i;
 	
-	boyut=sizeof(dizi)/sizeof(dizi[0]);   // Dizinin boyutu bulunur ekrana yazdırılır ve ardindan BubbleSort algoritmasi kullanılarak dizi siralanir.
+	boyut=sizeof(dizi)/sizeof(dizi[0]);   // Dizinin boyutu bulunur ekrana yazdÄ±rÄ±lÄ±r ve ardindan BubbleSort algoritmasi kullanÄ±larak dizi siralanir.
     	printf("Dizi: "); 
 	       for(i=0 ;i<boyut; i++)
 		    printf("%d ",dizi[i]);
 	
-	BubbleSort(dizi,boyut);      // Algoritmayi çağrdik.
+	BubbleSort(dizi,boyut);      // Algoritmayi Ã§aÄŸrdik.
 	
 	printf("\n\nAranacak elemani giriniz: ");
 	scanf("%d",&ArananSayi);
